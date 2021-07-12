@@ -1,0 +1,83 @@
+.bodydark{
+    background-color:  #232323;
+}
+
+.backgroundimagedark{
+    background: rgba(0, 0, 0, .65);
+    background-blend-mode: darken;
+}
+
+.formulariodark{
+    background: #484E54;
+    
+}
+
+.formulario2dark{
+    background: #232323;
+    color: #FFFFFF;
+}
+
+.divdark{
+    background-color:  #484E54 !important;
+}
+
+.h1dark{
+    color: #ECECEC !important;
+
+}
+
+.pdark {
+    color:  #FFFFFF;
+    border-bottom: 1px solid #393939;
+}
+
+.textodonedark{
+    
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.textotododark{
+    color: #FFFFFF !important;
+}
+
+.textodoingdark{
+    color: #FFFFFF !important;
+}
+
+.lidark li{
+    
+    border-bottom: 1px solid #393939 !important;
+
+}
+
+.lidark li p{
+    color:#FFFFFF !important;
+}
+
+.li2dark li p{
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-style: italic ;
+    text-decoration: line-through;
+}
+
+input:checked + .sliderdark {
+    background-color:  #0E0E0E;
+  }
+  
+input:focus + .sliderdark {
+    box-shadow: 0 0 1px #0E0E0E;
+}
+
+.sliderdark:before {
+    background-color: #3071D9;
+    
+}
+
+.Limpardark{
+    color:#FFFFFF;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+ 
+
+

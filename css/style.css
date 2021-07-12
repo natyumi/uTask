@@ -1,0 +1,474 @@
+@import url("./darkmode.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+body{
+    
+    background-color: #fcfcfc;
+    
+}
+
+header{
+    max-width: 930px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo{
+    
+    width: 46px;
+    height: 80px;
+    left: 195px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.engrenagem{
+    
+    width: 32.46px;
+    height: 33.91px;
+    top: 0.55px;
+    left: 1.27px;
+    cursor: pointer;
+    
+}
+
+.titulo{
+   
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+    color: #0C58D3;
+
+    border-bottom: 2px solid #0C58D3;
+}
+
+
+::placeholder{
+
+    font-style: italic;
+}
+
+.main{
+
+    max-width: 930px;
+    margin: 41px auto;
+    
+}
+
+form{
+
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    
+    width: 449px;
+    height: 45px;
+    left: 452px; 
+    top: 156px; 
+
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding-left: 10px;
+}
+
+.formulario:focus{
+    outline: 0;
+}
+
+.botaoEnviar{
+    margin-left: 19px;
+    cursor: pointer;
+}
+
+
+.caixas{
+
+    display: flex;
+    max-width: 930px;
+    margin: 58px auto;
+    justify-content: space-between;
+    font-family: Roboto;
+    
+}
+
+
+.caixas article{
+
+    margin: 25px 26px;
+    padding-bottom: 8px;
+    list-style: none;
+    font-family: Roboto;
+    font-size: 14px;
+    
+}
+
+.caixas div{
+
+    width: 300px;
+    height: 350px;
+    border: 1px solid #D9D9D9;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fcfcfc;
+}
+
+.caixas h1{
+
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    font-size: 36px;
+    margin: 18px 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+
+.caixas li {
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F0F0;
+}
+
+.caixas li p{
+
+    color: black;
+    font-family: Roboto;
+    font-size: 14px;
+    width: 220px;
+    margin-top: 13px;
+    padding-bottom: 5px;
+    
+}
+
+.caixas li img{
+    
+    cursor: pointer;
+}
+
+
+.botaoExcluir{
+    
+    margin-left: 14.03px;
+    width: 14px;
+    height: 14px;
+
+}
+
+.imagemSeta{
+
+    position: relative;
+    margin-right: 13.57px;
+    
+}
+
+.imagemCerto{
+
+    position: relative;
+    margin-right: 13.57px;
+}
+
+.imagemRefazer{
+
+    position: relative;
+    margin-right: 13.57px;
+}
+
+.textodone{
+    font-style: italic !important;
+    text-decoration: line-through !important;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.textotodo{
+    text-decoration: none !important;
+    font-style: normal ;
+    color: #000000 ;
+}
+
+.div{
+    overflow-y: auto;
+}
+
+.Rodape{
+    display: block;
+    background-color:  #0C58D3;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 80px;
+}
+
+.fraseCookie{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 930px;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.fraseCookie i{
+    width: 500px;
+    color: #fff;
+}
+
+
+.BotaoCookie{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BotaoCookie button:nth-child(1){
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.BotaoCookie button:nth-child(2){
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.BotaoCookie button:nth-child(3){
+    background-color: transparent;
+    margin-left: 16px;
+    align-self: flex-start;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Modal */
+
+.modal{
+
+    display: none; 
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.modal .content{
+    
+    font-family: Ubuntu;
+    background-color: white;
+    width: 514px;
+    margin: 145px auto;
+    padding: 22px;
+    z-index: 3;
+    border-radius: 15px;
+    border: 1px solid #767676;
+    display: grid;
+    grid-template-columns: 170px 220px 100px;
+    grid-template-rows: 100px 50px 50px 60px 50px;
+    
+    
+}
+
+.modal .content h1{
+    
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    width: 463px;
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 16px;
+
+    grid-column: 1/4;
+    place-self: center;
+}
+
+.modal .content .h1::after{
+    content:'';
+    display: block;
+    width: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+}
+
+.modal .content p{
+
+    font-size: 22px;
+
+}
+
+.pDarkmode{
+    
+    grid-row: 2;
+    grid-column: 1/2;
+    place-self: center;
+}
+
+.pPlanodefundo{
+    grid-row: 3;
+    place-self: center;
+}
+
+.formulario2{
+
+    margin-top: 14px;
+    width: 467px;
+    height: 43px;
+    left: 450px;
+    top: 358px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; 
+
+    grid-row: 4;
+    grid-column: 1/4;
+    place-self: center;
+    
+    
+}
+
+.modal .content button{
+
+    margin-top: 14px;
+    place-self: center;
+    padding: 6px 18px;
+    
+}
+
+/*Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 0px;
+
+    grid-row: 2;
+    grid-column: 3/4;
+    place-self: center;
+    
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+ 
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.Limpar{
+    font-family: Ubuntu;
+    font-size: 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #3071D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #3071D9;
+    cursor: pointer;
+
+    grid-row: 5;
+    grid-column: 1/2;
+}
+
+.Aplicar{
+    
+    font-family: Ubuntu;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color:  #3071D9;
+    cursor: pointer;
+
+    grid-row: 5;
+    grid-column: 3/4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

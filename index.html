@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/BlueLogo 1.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <title>uTask 2.0</title>
+
+</head>
+
+<body class = "body">
+
+    <header>
+        <img class = "logo" src="assets/BlueLogo_2.svg" alt="logo">
+
+        <h2 class="titulo">uTask <i>2.0</i> </h2>
+
+        <img class="engrenagem" src="assets/Vector.svg" alt="logo" onClick = "abrirModal()"> 
+
+        
+    </header>
+    
+    <main class="main">
+        <form>
+
+            <input class="formulario" type="text" name="nome" placeholder="     Adicionar Tarefa...">
+
+            <img class="botaoEnviar" src="assets/BotaoMais.png" alt="logo" onClick = "add()">
+            
+        </form>
+
+        <section class="caixas">
+    
+            <div class = "div">
+    
+                <h1 class="to-do">To do</h1>
+    
+                <article id = "artigo">
+                    
+                    
+                    <!-- <li>
+                        
+                        <p>aoba</p> 
+    
+                        <img class = "botaoSeta" src="assets/seta.png">
+    
+                        <img class = "botaoExcluir" src = "assets/Excluir.png">
+                    </li> -->
+    
+                </article>
+    
+            </div>
+    
+            <div class = "div">
+    
+                <h1 class="Doing">Doing</h1>
+    
+                <article id = "artigodoing">
+    
+                    <!-- <li>
+        
+                        <p>aoba</p>
+    
+                        <img class = "botaoCerto" src="assets/Certo.svg">
+    
+                        <img class = "botaoExcluir" src = "assets/Excluir.png">
+    
+                    </li> -->
+        
+                   </article>
+    
+            </div>
+    
+            <div class = "div">
+    
+                <h1 class="Done">Done</h1>
+    
+                <article id = "artigodone">
+    
+                    <!-- <li>
+    
+                        <p>aoba</p>
+    
+                        <img class = "botaoRefazer" src="assets/Refazer.svg">
+    
+                        <img class = "botaoExcluir" src = "assets/Excluir.png">
+    
+                    </li> -->
+    
+                </article>
+    
+            </div>
+    
+        </section>
+    
+        <section class = "modal" onClick = "fecharModal()">
+    
+    
+            <div class = "content">
+    
+                <h1 class = "config">Configuração</h1>
+    
+                <p class = "pDarkmode">Dark Mode</p>
+                
+                <label class="switch">
+                    <input class = "inputcheckbox" type="checkbox" onClick = "toggletrue()">
+                    <span class="slider round"></span>
+                </label>
+    
+                <p class = "pPlanodefundo">Plano de Fundo</p>
+    
+                <input class="formulario2" type="url" name="link">
+                <button class= "Limpar">Limpar</button>
+                <button class="Aplicar">Aplicar</button>
+
+            </div>
+    
+        </section>
+        
+    </main>
+
+
+    <footer class = "Rodape">
+
+        <div class = "fraseCookie">
+
+            <i>Você está de acordo com a nossa política de uso de cookies 🍪 para amplificar sua experiência no site?</i>
+
+            <div class="BotaoCookie">
+    
+                <button class = "naoconcordo">Não concordo</button>
+                <button class = "concordo">Sim, Concordo</button>
+                <button><img class = "botaoFechar" src = "assets/X.png"></button>
+    
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <!--JavaScript-->
+    <script src="js/modal.js"></script>
+    <script src="js/lista.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/cookie.js"></script>
+
+</body>
+
+</html>
