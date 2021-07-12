@@ -62,8 +62,6 @@ function add(){ //Função para adicionar elemento
         img2.addEventListener("click", (e)=>{
             e.preventDefault;
 
-            console.log("olaa1");
-
             let indice1 = arrayCookie1.indexOf(li);
             if(indice1>-1){
                 arrayCookie1.splice(indice1,1);
@@ -105,8 +103,6 @@ function nextdoing(linext, imagem, imagemexcluir, pdoing){
 
     imagemexcluir2.addEventListener("click", (e)=>{
         e.preventDefault;
-
-        console.log("olaa2");
 
         let indice2 = arrayCookie2.indexOf(linext);
         if(indice2>-1){
@@ -155,13 +151,9 @@ function nextdone(linext, imagem, imagemexcluir, pdone){
     console.log(textodone);
     arrayCookie3.push(textodone);
 
-    
-
     imagemexcluir3.addEventListener("click", (e)=>{
         e.preventDefault;
 
-        console.log("olaa3");
-        
         let indice3 = arrayCookie3.indexOf(linext);
         if(indice3>-1){
             arrayCookie3.splice(indice3,1);
@@ -221,8 +213,6 @@ function returntodo(linext, imagem, imagemexcluir, ptodo){
 
     img5.addEventListener("click", (e)=>{
         e.preventDefault;
-
-        console.log("olaa4");
 
         count++;
 

@@ -20,17 +20,12 @@ buttonConcordo.addEventListener("click", (e)=>{
     document.cookie = `background=${backgroundcookie}; expires=${data.toUTCString()}`;
     document.cookie = `darkmode=${darkmodecookie}; expires=${data.toUTCString()}`;
 
-    /* let auxtodo = false;
-    let auxdoing = false;
-    let auxdone = false; */
-
     document.cookie = `counttodo=${counttodo}; expires=${data.toUTCString()}`;
     document.cookie = `countdoing=${countdoing}; expires=${data.toUTCString()}`;
     document.cookie = `countdone=${countdone}; expires=${data.toUTCString()}`;
 
     
     if (counttodo>0){
-      /* auxtodo = true; */
       document.cookie = `arrayTodo=${arrayCookie1}; expires=${data.toUTCString()}`;
     }
 
@@ -42,36 +37,6 @@ buttonConcordo.addEventListener("click", (e)=>{
       document.cookie = `arrayDone=${arrayCookie3}; expires=${data.toUTCString()}`;
     }
 
-    // else{
-    //   auxdoing = false;
-    //   document.cookie = `arrayDoing=${auxdoing}; expires=${data.toUTCString()}`;
-    // }
-
-    // if (countdone>0){
-    //   auxdone = true;
-    //   document.cookie = `arrayDone=${auxdone}; expires=${data.toUTCString()}`;
-    // }
-
-    // else{
-    //   auxdone = false;
-    //   document.cookie = `arrayDone=${auxdone}; expires=${data.toUTCString()}`;
-    // }
-
-    // for(let i = 0; i<counttodo; i++){
-    //     console.log(arrayCookie1[i]);
-    // }
-
-    
-
-    // for(let i = 0; i<countdoing; i++){
-    //     console.log(arrayCookie2[i]);
-    // }
-
-    // for(let i = 0; i<countdone; i++){
-    //   console.log(arrayCookie3[i]);
-    // }
-
-    // refresh();
 
 });
 
@@ -89,10 +54,10 @@ function refresh(){
     let meuCookie;
 
     try{
-        meuCookie = document.cookie //Recebe os Cookies
-        .split('; ')    //Separa eles por ;
-        .find(item => item.startsWith('background=')) //Filtra o valor da key "nome"
-        .split('=')[1]; //Separa pelo = e assume a posição [1]
+        meuCookie = document.cookie 
+        .split('; ')    
+        .find(item => item.startsWith('background=')) 
+        .split('=')[1]; 
 
         console.log(meuCookie);
 
@@ -227,22 +192,24 @@ function refresh(){
       img2.addEventListener("click", (e)=>{
         e.preventDefault;
 
-        
-
-
         remove(li, artigo);
 
       });
 
         
         try{
+
           p.innerText = cookietodo[i];
           li.appendChild(p);
           li.appendChild(img);
           li.appendChild(img2);
           artigo.appendChild(li);
-        } catch(err){
+
+        } 
+        catch(err){
+
           console.log(err)
+
         }
         
       }
@@ -289,16 +256,16 @@ function refresh(){
           e.preventDefault;
           
           remove(lidoing, artigodoing);
+
         });
 
         imgdoing.addEventListener("click", (e)=>{
           e.preventDefault;
   
-          
           remove(lidoing, artigodoing);
   
-          
           nextdone(lidoing, imgdoing, imgdoing2, pdoing);
+
         });
         
         try{
@@ -307,8 +274,11 @@ function refresh(){
           lidoing.appendChild(imgdoing);
           lidoing.appendChild(imgdoing2);
           artigodoing.appendChild(lidoing);
-        } catch(err){
+        } 
+        catch(err){
+
           console.log(err)
+
         }
         
       }
@@ -350,6 +320,7 @@ function refresh(){
         imgdone2.src = "./assets/Excluirdark.png"
 
         imgdone2.addEventListener("click", (e)=>{
+
           e.preventDefault;
 
           remove(lidone, artigodone);
@@ -357,29 +328,30 @@ function refresh(){
         });
 
         imgdone.addEventListener("click", (e)=>{
+
           e.preventDefault;
-  
-          
-  
-        
+
           remove(lidone, artigodone);
   
-        
           returntodo(lidone, imgdone, imgdone2, pdone);
           
         });
         
         try{
+
           pdone.innerText = cookiedone[i];
           pdone.classList.add("textodone");
           lidone.appendChild(pdone);
           lidone.appendChild(imgdone);
           lidone.appendChild(imgdone2);
           artigodone.appendChild(lidone);
+
         } 
         
         catch(err){
+
           console.log(err)
+
         }
 
       
@@ -406,8 +378,6 @@ function refresh(){
       .find(item => item.startsWith('counttodo=')) 
       .split('=')[1];
 
-      
-
       for(let i = 0; i<countreturn; i++){
         const lireturn = document.createElement('li');
         const preturn = document.createElement('p');
@@ -429,27 +399,26 @@ function refresh(){
         imgreturn.addEventListener("click", (e)=>{
           e.preventDefault;
   
-          
-  
-        
           remove(lireturn, artigoreturn);
   
-        
           returntodo(lireturn, imgreturn, imgreturn2, preturn);
           
         });
         
         try{
+
           preturn.innerText = cookiereturn[i];
-          // preturn.classList.add("textoreturn");
           lireturn.appendChild(preturn);
           lireturn.appendChild(imgreturn);
           lireturn.appendChild(imgreturn2);
           artigoreturn.appendChild(lireturn);
+
         } 
         
         catch(err){
+
           console.log(err)
+          
         }
 
       
